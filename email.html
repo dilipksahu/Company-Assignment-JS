@@ -1,0 +1,26 @@
+<body>
+    <form>
+        
+        Name: <input type="text" id="name" value=""></br></br>
+        Email: <input type="email" id="email" value=""></br></br>
+        Subject: <input type="text" id="subject" value=""></br></br>
+        Message: <textarea  id="message" value=""></textarea></br></br>
+        <input type="button" value="Submit" onclick="wawa()" /></br></br>
+        <div id="username" style="color: red"></div>
+        <div id="useremail" style="color: red"></div>
+        <div id="usersub" style="color: red"></div>
+        <div id="usermsg" style="color: red"></div>
+    </form>
+    <script>
+        function wawa() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+            document.getElementById('username').innerHTML = 'Hi '+name+',';
+            document.getElementById('useremail').innerHTML = 'Your Email'+email;
+            document.getElementById('usersub').innerHTML = 'Subject: '+subject;
+            document.getElementById('usermsg').innerHTML = 'Message: '+message;
+        }
+    </script>
+</body>
